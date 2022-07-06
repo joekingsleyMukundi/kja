@@ -1,0 +1,152 @@
+<%- include('./includes/headers.ejs') %>
+
+  <!-- Shop Checkouts Content -->
+  <section class="shop-checkouts bgc-alice-blue">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-xl-9">
+          <div class="checkout_form style2">
+            <h4 class="mb40">Billing Details</h4>
+            <div class="checkout_coupon ui_kit_button">
+              <form class="form2" id="coupon_form" name="contact_form" action="#" method="post" novalidate="novalidate">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input name="form_name" class="form-control form_control" required="required" type="text"
+                        placeholder="First name">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input name="form_name2" class="form-control form_control" required="required" type="text"
+                        placeholder="Last name">
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <input name="form_name3" class="form-control form_control" required="required" type="text"
+                        placeholder="Company name (optional)">
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="my_profile_select_box form-group">
+                      <select class="selectpicker">
+                        <option>Country</option>
+                        <option>Turkey</option>
+                        <option>United Kingdom</option>
+                        <option>United State</option>
+                        <option>Ukraine</option>
+                        <option>Uruguay</option>
+                        <option>UK</option>
+                        <option>Uzbekistan</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <input name="form_name4" class="form-control form_control mb10" required="required" type="text"
+                        placeholder="Street address">
+                      <input name="form_name5" class="form-control form_control" required="required" type="text">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input name="form_name6" class="form-control form_control" required="required" type="number"
+                        placeholder="Postcode / ZIP">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input name="form_name7" class="form-control form_control" required="required" type="text"
+                        placeholder="Town / City">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input name="form_name8" class="form-control form_control" required="required" type="text"
+                        placeholder="Province">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input name="form_phone" class="form-control form_control" required="required" type="number"
+                        placeholder="Phone">
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <input name="form_email" class="form-control form_control required email" required="required"
+                        type="email" placeholder="Your Email">
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group mb0">
+                      <label class="ai_title">Additional Information</label>
+                      <textarea name="form_message" class="form-control required" rows="12"
+                        placeholder="Order notes (optional)" required="required"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-xl-3">
+          <div class="order_sidebar_widget mb30">
+            <h4 class="title">Your Order</h4>
+            <ul>
+              <li class="subtitle style2 bb1 mb20">
+                <p>Product <span class="float-right">Subtotal</span></p>
+              </li>
+              <li>
+                <p>Hoodie x2 <span class="float-right">$59.00</span></p>
+              </li>
+              <li>
+                <p>Seo Books x 1 <span class="float-right">$67.00</span></p>
+              </li>
+              <li class="subtitle bb1 style2 mt30">
+                <p>Subtotal <span class="float-right">$178.00</span></p>
+              </li>
+              <li class="subtitle bb1 style2 mt15">
+                <p>Shipping <span class="float-right totals color-orose">$178.00</span></p>
+              </li>
+              <li class="subtitle style2 mt15">
+                <p>Total <span class="float-right totals color-orose">$9,218.00</span></p>
+              </li>
+            </ul>
+          </div>
+          <div class="payment_widget">
+            <div class="ui_kit_checkbox style2">
+              <h4 class="mb20">Payment</h4>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck80">
+                <label class="custom-control-label" for="customCheck80">Direct bank transfer</label>
+              </div>
+              <div class="bt_details">
+                <p>Make your payment directly into our bank account. Please use your Order ID as the payment
+                  reference.Your order will not be shipped until the funds have.</p>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck82">
+                <label class="custom-control-label" for="customCheck82">Check payments</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck83">
+                <label class="custom-control-label" for="customCheck83">Cash on delivery</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck84">
+                <label class="custom-control-label" for="customCheck84">PayPal</label>
+              </div>
+            </div>
+          </div>
+          <div class="ui_kit_button payment_widget_btn">
+            <button type="button" class="btn btn-thm btn-block">Place Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Footer -->
+  <%- include('./includes/footers.ejs') %>

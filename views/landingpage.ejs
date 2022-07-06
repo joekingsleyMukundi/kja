@@ -1,0 +1,1042 @@
+<%- include('./includes/headerslanding.ejs') %>
+  <section class="modal fade search_dropdown" id="staticBackdrop" data-backdrop="static" data-keyboard="false"
+    tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="popup_modal_wrapper">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="adv_src_pmodal">
+                    <h6 class="title">Bathrooms</h6>
+                    <div class="ui_kit_select_box">
+                      <select class="selectpicker custom-select-lg mb20">
+                        <option value="">Select Bathrooms</option>
+                        <option value="One">1</option>
+                        <option value="Two">2</option>
+                        <option value="Three">3</option>
+                        <option value="Four">4</option>
+                        <option value="Five">5</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="adv_src_pmodal">
+                    <h6 class="title">Beds</h6>
+                    <div class="ui_kit_select_box">
+                      <select class="selectpicker custom-select-lg mb20">
+                        <option value="">Select Beds</option>
+                        <option value="One">1</option>
+                        <option value="Two">2</option>
+                        <option value="Three">3</option>
+                        <option value="Four">4</option>
+                        <option value="Five">5</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb30-md">
+                  <div class="adv_src_pmodal">
+                    <h6 class="title">Area (sq ft)</h6>
+                    <div class="form-group">
+                      <input type="text" class="form-control area_input float-left" placeholder="Min. Area">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control area_input float-right" placeholder="Max. Area">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="adv_src_pmodal">
+                    <h6 class="title">STATUS</h6>
+                    <div class="ui_kit_select_box">
+                      <select class="selectpicker custom-select-lg mb20">
+                        <option value="">Select Status</option>
+                        <option value="Active">Active</option>
+                        <option value="Deactive">Deactive</option>
+                        <option value="Pending">Pending</option>
+                        <option value="Others">Others</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb30-md">
+                  <div class="adv_src_pmodal">
+                    <h6 class="title">Price</h6>
+                    <div class="mt20" id="slider"></div>
+                    <span id="slider-range-value1"></span>
+                    <span id="slider-range-value2"></span>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="adv_src_pmodal">
+                    <h6 class="title">PROPERTY ID</h6>
+                    <input type="text" class="form-control property_id_input" placeholder="HZZS 03492">
+                  </div>
+                </div>
+              </div>
+              <div class="row mt30">
+                <div class="col-lg-12">
+                  <div class="adv_src_pmodal">
+                    <h6><span class="title">Amenities</span> <a class="tdu text-thm fz13 ml10" href="#">Select /
+                        Deselect All</a></h6>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <div class="adv_src_pmodal mb20">
+                    <div class="ui_kit_checkbox">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheckM1">
+                        <label class="custom-control-label" for="customCheckM1">Air Conditioning</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheckM2">
+                        <label class="custom-control-label" for="customCheckM2">Barbeque</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheckM3">
+                        <label class="custom-control-label" for="customCheckM3">Dryer</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheckM4">
+                        <label class="custom-control-label" for="customCheckM4">Gym</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheckM5">
+                        <label class="custom-control-label" for="customCheckM5">Laundry</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <div class="adv_src_pmodal mb20">
+                    <div class="ui_kit_checkbox">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheckM6">
+                        <label class="custom-control-label" for="customCheckM6">Lawn</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheckM7">
+                        <label class="custom-control-label" for="customCheckM7">Microwave</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheckM8">
+                        <label class="custom-control-label" for="customCheckM8">Outdoor Shower</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheckM9">
+                        <label class="custom-control-label" for="customCheckM9">Refrigerator</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheckM10">
+                        <label class="custom-control-label" for="customCheckM10">Stunning views</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <div class="adv_src_pmodal mb20">
+                    <div class="ui_kit_checkbox">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheckM11">
+                        <label class="custom-control-label" for="customCheckM11">Waterfront</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheckM12">
+                        <label class="custom-control-label" for="customCheckM12">Parking</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheckM13">
+                        <label class="custom-control-label" for="customCheckM13">Doorman</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheckM14">
+                        <label class="custom-control-label" for="customCheckM14">Central Heating</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheckM15">
+                        <label class="custom-control-label" for="customCheckM15">Cleaning Service</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="adv_src_pmodal">
+                    <button class="btn btn-block btn-thm"><span class="fa fa-search mr15"></span>Show 300+
+                      PROPERTY</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Home Design -->
+  <section class="home-one home1-overlay bg-home4">
+    <div class="container">
+      <div class="row posr">
+        <div class="col-lg-12">
+          <div class="home_content home1 custom_width home4">
+            <div class="home-text text-center">
+              <p class="fz16 color-white">It's great to be home!</p>
+              <h2 class="fz60">Find Your Future Home</h2>
+            </div>
+            <div class="home_tabs home4">
+              <ul class="nav justify-content-center nav-tabs" id="myTab2" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="buy-tab" data-toggle="tab" href="#buy" role="tab" aria-controls="buy"
+                    aria-selected="true">Buy</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="rent-tab" data-toggle="tab" href="#rent" role="tab"
+                    aria-controls="rent" aria-selected="false">Rent</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="sold-tab" data-toggle="tab" href="#sold" role="tab" aria-controls="sold"
+                    aria-selected="false">Sold</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent2">
+                <div class="tab-pane fade" id="buy" role="tabpanel" aria-labelledby="buy-tab">
+                  <div class="home_adv_srch_opt home4">
+                    <div class="wrapper">
+                      <div class="home_adv_srch_form home4">
+                        <form class="bgc-white">
+                          <div class="form-row align-items-center">
+                            <div class="col-auto home_form_input mb15-md">
+                              <div class="form-group style2 mb-0">
+                                <label>TYPE</label>
+                                <div class="select-wrap style2-dropdown">
+                                  <select class="selectpicker show-tick" multiple>
+                                    <option value="Apartment">Apartment</option>
+                                    <option value="Condo">Condo</option>
+                                    <option value="Studio">Studio</option>
+                                    <option value="Villa">Villa</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-auto home_form_input mb15-md">
+                              <div class="form-group style2 mb-0">
+                                <label>LOCATION</label>
+                                <div class="select-wrap style2-dropdown">
+                                  <select class="selectpicker">
+                                    <option value="">All Cities</option>
+                                    <option value="NewYork">New York</option>
+                                    <option value="London">London</option>
+                                    <option value="Paris">Paris</option>
+                                    <option value="Istanbul">Istanbul</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-auto home_form_input mb15-md">
+                              <div class="form-group style1 mb-0">
+                                <label>SEARCH</label>
+                                <div class="select-wrap style1-dropdown">
+                                  <select name="lang" class="form-control js-searchBox">
+                                    <option value="">Eaton Garth</option>
+                                    <option value="EatonGarthPenthouse1">Eaton Garth Penthouse</option>
+                                    <option value="EatonGarthPenthouse2">Eaton Garth Penthouse</option>
+                                    <option value="EatonGarthPenthouse3">Eaton Garth Penthouse</option>
+                                    <option value="Hotels">View All Results</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-auto home_form_input2">
+                              <button type="submit" class="btn search-btn ml15 ml0-991"><span
+                                  class="fa fa-search"></span> Search</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade show active" id="rent" role="tabpanel" aria-labelledby="rent-tab">
+                  <div class="home_adv_srch_opt home4">
+                    <div class="wrapper">
+                      <div class="home_adv_srch_form home4">
+                        <form class="bgc-white">
+                          <div class="form-row align-items-center">
+                            <div class="col-auto home_form_input mb15-md">
+                              <div class="form-group style2 mb-0">
+                                <label>TYPE</label>
+                                <div class="select-wrap style2-dropdown">
+                                  <select class="selectpicker show-tick" multiple>
+                                    <option value="Apartment">Apartment</option>
+                                    <option value="Condo">Condo</option>
+                                    <option value="Studio">Studio</option>
+                                    <option value="Villa">Villa</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-auto home_form_input mb15-md">
+                              <div class="form-group style2 mb-0">
+                                <label>LOCATION</label>
+                                <div class="select-wrap style2-dropdown">
+                                  <select class="selectpicker">
+                                    <option value="">All Cities</option>
+                                    <option value="NewYork">New York</option>
+                                    <option value="London">London</option>
+                                    <option value="Paris">Paris</option>
+                                    <option value="Istanbul">Istanbul</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-auto home_form_input mb15-md">
+                              <div class="form-group style1 mb-0">
+                                <label>SEARCH</label>
+                                <div class="select-wrap style1-dropdown">
+                                  <select name="lang" class="form-control js-searchBox">
+                                    <option value="">Eaton Garth</option>
+                                    <option value="EatonGarthPenthouse1">Eaton Garth Penthouse</option>
+                                    <option value="EatonGarthPenthouse2">Eaton Garth Penthouse</option>
+                                    <option value="EatonGarthPenthouse3">Eaton Garth Penthouse</option>
+                                    <option value="Hotels">View All Results</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-auto home_form_input2">
+                              <button type="submit" class="btn search-btn ml15 ml0-991"><span
+                                  class="fa fa-search"></span> Search</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="sold" role="tabpanel" aria-labelledby="sold-tab">
+                  <div class="home_adv_srch_opt home4">
+                    <div class="wrapper">
+                      <div class="home_adv_srch_form home4">
+                        <form class="bgc-white">
+                          <div class="form-row align-items-center">
+                            <div class="col-auto home_form_input mb15-md">
+                              <div class="form-group style2 mb-0">
+                                <label>TYPE</label>
+                                <div class="select-wrap style2-dropdown">
+                                  <select class="selectpicker show-tick" multiple>
+                                    <option value="Apartment">Apartment</option>
+                                    <option value="Condo">Condo</option>
+                                    <option value="Studio">Studio</option>
+                                    <option value="Villa">Villa</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-auto home_form_input mb15-md">
+                              <div class="form-group style2 mb-0">
+                                <label>LOCATION</label>
+                                <div class="select-wrap style2-dropdown">
+                                  <select class="selectpicker">
+                                    <option value="">All Cities</option>
+                                    <option value="NewYork">New York</option>
+                                    <option value="London">London</option>
+                                    <option value="Paris">Paris</option>
+                                    <option value="Istanbul">Istanbul</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-auto home_form_input mb15-md">
+                              <div class="form-group style1 mb-0">
+                                <label>SEARCH</label>
+                                <div class="select-wrap style1-dropdown">
+                                  <select name="lang" class="form-control js-searchBox">
+                                    <option value="">Eaton Garth</option>
+                                    <option value="EatonGarthPenthouse1">Eaton Garth Penthouse</option>
+                                    <option value="EatonGarthPenthouse2">Eaton Garth Penthouse</option>
+                                    <option value="EatonGarthPenthouse3">Eaton Garth Penthouse</option>
+                                    <option value="Hotels">View All Results</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-auto home_form_input2">
+                              <button type="submit" class="btn search-btn ml15 ml0-991"><span
+                                  class="fa fa-search"></span> Search</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hot Location of City -->
+  <section class="hot_localtion pb0">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="main-title text-center">
+            <h2>Explore Cities</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+          <div class="property_city_home6 tac-767">
+            <div class="thumb"><img class="w100" src="images/property/pc18.jpg" alt="pc18.jpg"></div>
+            <div class="details">
+              <h4><a href="page-listing-single-v3.html">Miami</a></h4>
+              <p>62 Listings</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+          <div class="property_city_home6 tac-767">
+            <div class="thumb"><img class="w100" src="images/property/pc19.jpg" alt="pc19.jpg"></div>
+            <div class="details">
+              <h4><a href="page-listing-single-v3.html">Roma</a></h4>
+              <p>92 Listings</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+          <div class="property_city_home6 tac-767">
+            <div class="thumb"><img class="w100" src="images/property/pc20.jpg" alt="pc20.jpg"></div>
+            <div class="details">
+              <h4><a href="page-listing-single-v3.html">New Delhi</a></h4>
+              <p>12 Listings</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+          <div class="property_city_home6 tac-767">
+            <div class="thumb"><img class="w100" src="images/property/pc21.jpg" alt="pc21.jpg"></div>
+            <div class="details">
+              <h4><a href="page-listing-single-v3.html">London</a></h4>
+              <p>74 Listings</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+          <div class="property_city_home6 tac-767">
+            <div class="thumb"><img class="w100" src="images/property/pc22.jpg" alt="pc22.jpg"></div>
+            <div class="details">
+              <h4><a href="page-listing-single-v3.html">Amsterdam</a></h4>
+              <p>62 Listings</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+          <div class="property_city_home6 tac-767">
+            <div class="thumb"><img class="w100" src="images/property/pc23.jpg" alt="pc23.jpg"></div>
+            <div class="details">
+              <h4><a href="page-listing-single-v3.html">Berlin</a></h4>
+              <p>92 Listings</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+          <div class="property_city_home6 tac-767">
+            <div class="thumb"><img class="w100" src="images/property/pc24.jpg" alt="pc24.jpg"></div>
+            <div class="details">
+              <h4><a href="page-listing-single-v3.html">Paris</a></h4>
+              <p>12 Listings</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+          <div class="property_city_home6 tac-767">
+            <div class="thumb"><img class="w100" src="images/property/pc25.jpg" alt="pc25.jpg"></div>
+            <div class="details">
+              <h4><a href="page-listing-single-v3.html">New Zealand</a></h4>
+              <p>74 Listings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Property For Rent -->
+  <section class="recent-property pb70">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="main-title text-center">
+            <h2>Our Latest Properties</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="recent_property_slider_home1">
+            <div class="item">
+              <div class="feat_property recent">
+                <div class="thumb"> <img class="img-whp" src="images/property/rp1.jpg" alt="rp1.jpg">
+                  <div class="thmb_cntnt">
+                    <ul class="tag mb0">
+                      <li class="list-inline-item"><a href="#">FEATURED</a></li>
+                    </ul>
+                    <ul class="tag2 mb0">
+                      <li class="list-inline-item"><a href="#">FOR SALE</a></li>
+                    </ul>
+                  </div>
+                  <div class="thmb_cntnt2">
+                    <ul class="listing_gallery mb0">
+                      <li class="list-inline-item"><a class="text-white" href="#"><span
+                            class="flaticon-photo-camera mr5"></span> 22</a></li>
+                      <li class="list-inline-item"><a class="text-white" href="#"><span
+                            class="flaticon-play-button mr5"></span> 3</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="details">
+                  <div class="tc_content">
+                    <div class="badge_icon"><a href="#"><img src="images/agent/1.png" alt="1.png"></a></div>
+                    <h4><a href="page-listing-single-v8.html">New Apartment Nice Wiew</a></h4>
+                    <p>Quincy St, Brooklyn, NY, USA</p>
+                    <ul class="prop_details mb0">
+                      <li class="list-inline-item"><a href="#"><span class="flaticon-bed pr5"></span> <br>4 Beds</a>
+                      </li>
+                      <li class="list-inline-item"><a href="#"><span class="flaticon-bath pr5"></span> <br>5 Bath</a>
+                      </li>
+                      <li class="list-inline-item"><a href="#"><span class="flaticon-car pr5"></span> <br>1 Garage</a>
+                      </li>
+                      <li class="list-inline-item"><a href="#"><span class="flaticon-ruler pr5"></span> <br>1200 Sq
+                          Ft</a></li>
+                    </ul>
+                  </div>
+                  <div class="fp_footer">
+                    <ul class="fp_meta float-left mb0">
+                      <li class="list-inline-item"><a href="#"><small><del
+                              class="body-color">$2,800/mo</del></small><br>
+                          <span class="heading-color fw600">$7,500/mo</span></a></li>
+                    </ul>
+                    <ul class="fp_meta float-right mb0">
+                      <li class="list-inline-item"><a class="icon" href="#"><span class="flaticon-resize"></span></a>
+                      </li>
+                      <li class="list-inline-item"><a class="icon" href="#"><span class="flaticon-add"></span></a>
+                      </li>
+                      <li class="list-inline-item"><a class="icon" href="#"><span
+                            class="flaticon-heart-shape-outline"></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="feat_property recent">
+                <div class="thumb"> <img class="img-whp" src="images/property/rp2.jpg" alt="rp2.jpg">
+                  <div class="thmb_cntnt">
+                    <ul class="tag mb0">
+                      <li class="list-inline-item"><a href="#">FEATURED</a></li>
+                    </ul>
+                    <ul class="tag2 mb0">
+                      <li class="list-inline-item"><a href="#">FOR SALE</a></li>
+                    </ul>
+                  </div>
+                  <div class="thmb_cntnt2">
+                    <ul class="listing_gallery mb0">
+                      <li class="list-inline-item"><a class="text-white" href="#"><span
+                            class="flaticon-photo-camera mr5"></span> 22</a></li>
+                      <li class="list-inline-item"><a class="text-white" href="#"><span
+                            class="flaticon-play-button mr5"></span> 3</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="details">
+                  <div class="tc_content">
+                    <div class="badge_icon"><a href="#"><img src="images/agent/2.png" alt="2.png"></a></div>
+                    <h4><a href="page-listing-single-v8.html">Skyper Pool Apartment</a></h4>
+                    <p>Quincy St, Brooklyn, NY, USA</p>
+                    <ul class="prop_details mb0">
+                      <li class="list-inline-item"><a href="#"><span class="flaticon-bed pr5"></span> <br>4 Beds</a>
+                      </li>
+                      <li class="list-inline-item"><a href="#"><span class="flaticon-bath pr5"></span> <br>5 Bath</a>
+                      </li>
+                      <li class="list-inline-item"><a href="#"><span class="flaticon-car pr5"></span> <br>1 Garage</a>
+                      </li>
+                      <li class="list-inline-item"><a href="#"><span class="flaticon-ruler pr5"></span> <br>1200 Sq
+                          Ft</a></li>
+                    </ul>
+                  </div>
+                  <div class="fp_footer">
+                    <ul class="fp_meta float-left mb0">
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <small><del class="body-color">$2,800/mo</del></small><br>
+                          <span class="heading-color fw600">$5,250/mo</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <ul class="fp_meta float-right mb0">
+                      <li class="list-inline-item"><a class="icon" href="#"><span class="flaticon-resize"></span></a>
+                      </li>
+                      <li class="list-inline-item"><a class="icon" href="#"><span class="flaticon-add"></span></a>
+                      </li>
+                      <li class="list-inline-item"><a class="icon" href="#"><span
+                            class="flaticon-heart-shape-outline"></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="feat_property recent">
+                <div class="thumb"> <img class="img-whp" src="images/property/rp3.jpg" alt="rp3.jpg">
+                  <div class="thmb_cntnt">
+                    <ul class="tag mb0">
+                      <li class="list-inline-item"><a href="#">FEATURED</a></li>
+                    </ul>
+                    <ul class="tag2 mb0">
+                      <li class="list-inline-item"><a href="#">FOR SALE</a></li>
+                    </ul>
+                  </div>
+                  <div class="thmb_cntnt2">
+                    <ul class="listing_gallery mb0">
+                      <li class="list-inline-item"><a class="text-white" href="#"><span
+                            class="flaticon-photo-camera mr5"></span> 22</a></li>
+                      <li class="list-inline-item"><a class="text-white" href="#"><span
+                            class="flaticon-play-button mr5"></span> 3</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="details">
+                  <div class="tc_content">
+                    <div class="badge_icon"><a href="#"><img src="images/agent/3.png" alt="3.png"></a></div>
+                    <h4><a href="page-listing-single-v8.html">New Caledonian Wharf</a></h4>
+                    <p>Quincy St, Brooklyn, NY, USA</p>
+                    <ul class="prop_details mb0">
+                      <li class="list-inline-item"><a href="#"><span class="flaticon-bed pr5"></span> <br>4 Beds</a>
+                      </li>
+                      <li class="list-inline-item"><a href="#"><span class="flaticon-bath pr5"></span> <br>5 Bath</a>
+                      </li>
+                      <li class="list-inline-item"><a href="#"><span class="flaticon-car pr5"></span> <br>1 Garage</a>
+                      </li>
+                      <li class="list-inline-item"><a href="#"><span class="flaticon-ruler pr5"></span> <br>1200 Sq
+                          Ft</a></li>
+                    </ul>
+                  </div>
+                  <div class="fp_footer">
+                    <ul class="fp_meta float-left mb0">
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <small><del class="body-color">$2,800/mo</del></small><br>
+                          <span class="heading-color fw600">$2,300/mo</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <ul class="fp_meta float-right mb0">
+                      <li class="list-inline-item"><a class="icon" href="#"><span class="flaticon-resize"></span></a>
+                      </li>
+                      <li class="list-inline-item"><a class="icon" href="#"><span class="flaticon-add"></span></a>
+                      </li>
+                      <li class="list-inline-item"><a class="icon" href="#"><span
+                            class="flaticon-heart-shape-outline"></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="feat_property recent">
+                <div class="thumb"> <img class="img-whp" src="images/property/rp4.jpg" alt="rp3.jpg">
+                  <div class="thmb_cntnt">
+                    <ul class="tag mb0">
+                      <li class="list-inline-item"><a href="#">FEATURED</a></li>
+                    </ul>
+                    <ul class="tag2 mb0">
+                      <li class="list-inline-item"><a href="#">FOR SALE</a></li>
+                    </ul>
+                  </div>
+                  <div class="thmb_cntnt2">
+                    <ul class="listing_gallery mb0">
+                      <li class="list-inline-item"><a class="text-white" href="#"><span
+                            class="flaticon-photo-camera mr5"></span> 22</a></li>
+                      <li class="list-inline-item"><a class="text-white" href="#"><span
+                            class="flaticon-play-button mr5"></span> 3</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="details">
+                  <div class="tc_content">
+                    <div class="badge_icon"><a href="#"><img src="images/agent/4.png" alt="4.png"></a></div>
+                    <h4><a href="page-listing-single-v8.html">Spacious Family Home</a></h4>
+                    <p>Quincy St, Brooklyn, NY, USA</p>
+                    <ul class="prop_details mb0">
+                      <li class="list-inline-item"><a href="#"><span class="flaticon-bed pr5"></span> <br>4 Beds</a>
+                      </li>
+                      <li class="list-inline-item"><a href="#"><span class="flaticon-bath pr5"></span> <br>5 Bath</a>
+                      </li>
+                      <li class="list-inline-item"><a href="#"><span class="flaticon-car pr5"></span> <br>1 Garage</a>
+                      </li>
+                      <li class="list-inline-item"><a href="#"><span class="flaticon-ruler pr5"></span> <br>1200 Sq
+                          Ft</a></li>
+                    </ul>
+                  </div>
+                  <div class="fp_footer">
+                    <ul class="fp_meta float-left mb0">
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <small><del class="body-color">$2,800/mo</del></small><br>
+                          <span class="heading-color fw600">$1,900/mo</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <ul class="fp_meta float-right mb0">
+                      <li class="list-inline-item"><a class="icon" href="#"><span class="flaticon-resize"></span></a>
+                      </li>
+                      <li class="list-inline-item"><a class="icon" href="#"><span class="flaticon-add"></span></a>
+                      </li>
+                      <li class="list-inline-item"><a class="icon" href="#"><span
+                            class="flaticon-heart-shape-outline"></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="feat_property recent">
+                <div class="thumb"> <img class="img-whp" src="images/property/rp1.jpg" alt="rp1.jpg">
+                  <div class="thmb_cntnt">
+                    <ul class="tag mb0">
+                      <li class="list-inline-item"><a href="#">FEATURED</a></li>
+                    </ul>
+                    <ul class="tag2 mb0">
+                      <li class="list-inline-item"><a href="#">FOR SALE</a></li>
+                    </ul>
+                  </div>
+                  <div class="thmb_cntnt2">
+                    <ul class="listing_gallery mb0">
+                      <li class="list-inline-item"><a class="text-white" href="#"><span
+                            class="flaticon-photo-camera mr5"></span> 22</a></li>
+                      <li class="list-inline-item"><a class="text-white" href="#"><span
+                            class="flaticon-play-button mr5"></span> 3</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="details">
+                  <div class="tc_content">
+                    <div class="badge_icon"><a href="#"><img src="images/agent/1.png" alt="1.png"></a></div>
+                    <h4><a href="page-listing-single-v8.html">New Apartment Nice Wiew</a></h4>
+                    <p>Quincy St, Brooklyn, NY, USA</p>
+                    <ul class="prop_details mb0">
+                      <li class="list-inline-item"><a href="#"><span class="flaticon-bed pr5"></span> <br>4 Beds</a>
+                      </li>
+                      <li class="list-inline-item"><a href="#"><span class="flaticon-bath pr5"></span> <br>5 Bath</a>
+                      </li>
+                      <li class="list-inline-item"><a href="#"><span class="flaticon-car pr5"></span> <br>1 Garage</a>
+                      </li>
+                      <li class="list-inline-item"><a href="#"><span class="flaticon-ruler pr5"></span> <br>1200 Sq
+                          Ft</a></li>
+                    </ul>
+                  </div>
+                  <div class="fp_footer">
+                    <ul class="fp_meta float-left mb0">
+                      <li class="list-inline-item"><a href="#"><small><del
+                              class="body-color">$2,800/mo</del></small><br>
+                          <span class="heading-color fw600">$7,500/mo</span></a></li>
+                    </ul>
+                    <ul class="fp_meta float-right mb0">
+                      <li class="list-inline-item"><a class="icon" href="#"><span class="flaticon-resize"></span></a>
+                      </li>
+                      <li class="list-inline-item"><a class="icon" href="#"><span class="flaticon-add"></span></a>
+                      </li>
+                      <li class="list-inline-item"><a class="icon" href="#"><span
+                            class="flaticon-heart-shape-outline"></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Property Cities -->
+  <section class="property-city bg-ptrn2 bgc-dark pb70">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="main-title text-center">
+            <h2 class="text-white">Explore Our Properties</h2>
+            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit donec sollicitudin</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="feature_place_home2_slider">
+            <div class="item">
+              <div class="properti_city">
+                <div class="thumb"><img class="img-fluid w100" src="images/property/ep1.jpg" alt="ep1.jpg"></div>
+                <div class="overlay">
+                  <div class="details">
+                    <div class="icon"><span class="flaticon-home"></span></div>
+                    <h4><a href="page-listing-single-v5.html">House</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="properti_city">
+                <div class="thumb"><img class="img-fluid w100" src="images/property/ep2.jpg" alt="ep2.jpg"></div>
+                <div class="overlay">
+                  <div class="details">
+                    <div class="icon"><span class="flaticon-apartment"></span></div>
+                    <h4><a href="page-listing-single-v5.html">Apartment</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="properti_city">
+                <div class="thumb"><img class="img-fluid w100" src="images/property/ep3.jpg" alt="ep3.jpg"></div>
+                <div class="overlay">
+                  <div class="details">
+                    <div class="icon"><span class="flaticon-business-and-trade"></span></div>
+                    <h4><a href="page-listing-single-v5.html">Office</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="properti_city">
+                <div class="thumb"><img class="img-fluid w100" src="images/property/ep4.jpg" alt="ep4.jpg"></div>
+                <div class="overlay">
+                  <div class="details">
+                    <div class="icon"><span class="flaticon-villa"></span></div>
+                    <h4><a href="page-listing-single-v5.html">Villa</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="properti_city">
+                <div class="thumb"><img class="img-fluid w100" src="images/property/ep5.jpg" alt="ep.jpg"></div>
+                <div class="overlay">
+                  <div class="details">
+                    <div class="icon"><span class="flaticon-living-room"></span></div>
+                    <h4><a href="page-listing-single-v5.html">Room</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Blog -->
+  <section class="our-blog pb70">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="main-title text-center">
+            <h2>From Our Blog</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-xl-3">
+          <div class="for_blog feat_property home4">
+            <div class="thumb"> <img class="img-whp" src="images/blog/1.jpg" alt="1.jpg">
+              <div class="tag bgc-thm"><a class="text-white" href="#">FAMILY HOUSE</a></div>
+            </div>
+            <div class="details">
+              <div class="tc_content">
+                <div class="bp_meta">
+                  <ul>
+                    <li class="list-inline-item"><a href="#"><span class="flaticon-user fz15 mr10"></span> Robert
+                        Fox</a></li>
+                    <li class="list-inline-item"><a href="#"><span class="flaticon-calendar fz15 mr10"></span> 06
+                        April, 2021</a></li>
+                  </ul>
+                </div>
+                <h4>Redfin Ranks the Most Competitive Neighborhoods of 2021</h4>
+                <p>Semper sagittis facilisi praesent elementum purus faucibus faucibus non tempus. </p>
+                <a class="heading-color tdu read_more_btn" href="page-blog-single.html">READ MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="for_blog feat_property home4">
+            <div class="thumb"> <img class="img-whp" src="images/blog/2.jpg" alt="2.jpg">
+              <div class="tag bgc-thm"><a class="text-white" href="#">APARTMENT</a></div>
+            </div>
+            <div class="details">
+              <div class="tc_content">
+                <div class="bp_meta">
+                  <ul>
+                    <li class="list-inline-item"><a href="#"><span class="flaticon-user fz15 mr10"></span> Robert
+                        Fox</a></li>
+                    <li class="list-inline-item"><a href="#"><span class="flaticon-calendar fz15 mr10"></span> 06
+                        April, 2021</a></li>
+                  </ul>
+                </div>
+                <h4>Redfin Ranks the Most Competitive Neighborhoods of 2021</h4>
+                <p>Semper sagittis facilisi praesent elementum purus faucibus faucibus non tempus. </p>
+                <a class="heading-color tdu read_more_btn" href="page-blog-single.html">READ MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="for_blog feat_property home4">
+            <div class="thumb"> <img class="img-whp" src="images/blog/3.jpg" alt="3.jpg">
+              <div class="tag bgc-thm"><a class="text-white" href="#">APARTMENT</a></div>
+            </div>
+            <div class="details">
+              <div class="tc_content">
+                <div class="bp_meta">
+                  <ul>
+                    <li class="list-inline-item"><a href="#"><span class="flaticon-user fz15 mr10"></span> Robert
+                        Fox</a></li>
+                    <li class="list-inline-item"><a href="#"><span class="flaticon-calendar fz15 mr10"></span> 06
+                        April, 2021</a></li>
+                  </ul>
+                </div>
+                <h4>Redfin Ranks the Most Competitive Neighborhoods of 2021</h4>
+                <p>Semper sagittis facilisi praesent elementum purus faucibus faucibus non tempus. </p>
+                <a class="heading-color tdu read_more_btn" href="page-blog-single.html">READ MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="for_blog feat_property home4">
+            <div class="thumb"> <img class="img-whp" src="images/blog/4.jpg" alt="4.jpg">
+              <div class="tag bgc-thm"><a class="text-white" href="#">RENTAL</a></div>
+            </div>
+            <div class="details">
+              <div class="tc_content">
+                <div class="bp_meta">
+                  <ul>
+                    <li class="list-inline-item"><a href="#"><span class="flaticon-user fz15 mr10"></span> Robert
+                        Fox</a></li>
+                    <li class="list-inline-item"><a href="#"><span class="flaticon-calendar fz15 mr10"></span> 06
+                        April, 2021</a></li>
+                  </ul>
+                </div>
+                <h4>Redfin Ranks the Most Competitive Neighborhoods of 2021</h4>
+                <p>Semper sagittis facilisi praesent elementum purus faucibus faucibus non tempus. </p>
+                <a class="heading-color tdu read_more_btn" href="page-blog-single.html">READ MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Divider -->
+  <section class="divider home4 bg-img4 parallax" data-stellar-background-ratio="0.2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="property_sell_home4">
+            <h2 class="title text-white mb20">We Help You Buy or Sell <br> Your Property Quickly</h2>
+            <p class="fz16 text-white fw500">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+              Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-4 offset-xl-1">
+          <div class="divider_contact_form">
+            <div class="wrapper">
+              <form>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label>NAME</label>
+                      <input class="form-control form_control" type="text" placeholder="Ali Tuf..">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label>PHONE NUMBER</label>
+                      <input class="form-control form_control" type="text" placeholder="(1) 123 567 976">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label>EMAIL</label>
+                      <input class="form-control form_control" type="email" placeholder="creativelayers088@gmail.com">
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <label>YOUR MESSAGE</label>
+                      <textarea class="form-control" rows="6" placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-group mb0">
+                      <button type="button" class="btn btn-block form_btn">Send Message</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- funfact -->
+  <section class="our-funfact bb1 pt60 pb30">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-lg-3">
+          <div class="funfact_one text-center">
+            <div class="details">
+              <div class="timer">66.180</div>
+              <p class="ff_title">Homes for sale</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="funfact_one text-center">
+            <div class="details">
+              <div class="timer">4.809</div>
+              <p class="ff_title">Open houses</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="funfact_one text-center">
+            <div class="details">
+              <div class="timer">30.469</div>
+              <p class="ff_title">Recently sold</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="funfact_one text-center">
+            <div class="details">
+              <div class="timer">2.919</div>
+              <p class="ff_title">Price reduced</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Footer -->
+  <%- include('./includes/footers.ejs') %>

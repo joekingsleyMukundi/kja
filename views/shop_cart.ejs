@@ -1,0 +1,104 @@
+<%- include('./includes/headers.ejs') %>
+
+  <!-- Shop Checkouts Content -->
+  <section class="shop-cart bgc-alice-blue">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-xl-9">
+          <div class="cart-wrapper">
+            <div class="cart_page_form">
+              <form action="#">
+                <table class="table table-responsive table-borderless">
+                  <thead>
+                    <tr class="carttable_row">
+                      <th class="cartm_title">Cart</th>
+                      <th class="cartm_title"></th>
+                      <th class="cartm_title"></th>
+                      <th class="cartm_title"></th>
+                      <th class="cartm_title"></th>
+                    </tr>
+                  </thead>
+                  <tbody class="table_body">
+                    <tr>
+                      <th scope="row">
+                        <ul class="cart_list">
+                          <li class="list-inline-item pr10"><a href="#"><img src="images/shop/cart1.png"
+                                alt="cart1.png"></a></li>
+                          <li class="list-inline-item"><a class="cart_title" href="#">Album</a></li>
+                        </ul>
+                      </th>
+                      <td>$298</td>
+                      <td class="text-center tal-767"><input class="cart_count text-center" placeholder="4"
+                          type="number"></td>
+                      <td class="cart_total">$1.298</td>
+                      <td><a href="#" data-toggle="tooltip" data-placement="top" title="Delete"><span
+                            class="flaticon-trash"></span></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <ul class="cart_list">
+                          <li class="list-inline-item pr10"><a href="#"><img src="images/shop/cart1.png"
+                                alt="cart1.png"></a></li>
+                          <li class="list-inline-item"><a class="cart_title" href="#">Hoodie</a></li>
+                        </ul>
+                      </th>
+                      <td>$298</td>
+                      <td class="text-center tal-767"><input class="cart_count text-center" placeholder="4"
+                          type="number"></td>
+                      <td class="cart_total">$1.298</td>
+                      <td><a href="#" data-toggle="tooltip" data-placement="top" title="Delete"><span
+                            class="flaticon-trash"></span></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <ul class="cart_list">
+                          <li class="list-inline-item pr10"><a href="#"><img src="images/shop/cart1.png"
+                                alt="cart1.png"></a></li>
+                          <li class="list-inline-item"><a class="cart_title" href="#">Beanie</a></li>
+                        </ul>
+                      </th>
+                      <td>$298</td>
+                      <td class="text-center tal-767"><input class="cart_count text-center" placeholder="4"
+                          type="number"></td>
+                      <td class="cart_total">$1.298</td>
+                      <td><a href="#" data-toggle="tooltip" data-placement="top" title="Delete"><span
+                            class="flaticon-trash"></span></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+            <div class="checkout_form mt30">
+              <div class="checkout_coupon ui_kit_button">
+                <form class="form-inline">
+                  <input class="form-control coupon_input" type="search" placeholder="Coupon Code" aria-label="Search">
+                  <button type="button" class="btn btn2">Apply Coupon</button>
+                  <button type="button" class="btn btn3">Update Cart</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-xl-3">
+          <div class="order_sidebar_widget style2">
+            <h4 class="title">Cart Totals</h4>
+            <ul>
+              <li class="subtitle">
+                <p>Subtotal <span class="float-right">$13,000</span></p>
+                <hr>
+              </li>
+              <li class="subtitle">
+                <p>Total <span class="float-right totals color-orose">$943,00</span></p>
+              </li>
+            </ul>
+          </div>
+          <div class="ui_kit_button payment_widget_btn">
+            <button type="button" class="btn btn-thm btn-block">Proceed to checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Footer -->
+  <%- include('./includes/footers.ejs') %>
